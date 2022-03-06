@@ -1,0 +1,54 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     background: #111;
+}
+
+header {
+     display: flex;
+     justify-content: center;
+}
+
+#logo-mobile {
+     display: none;
+}
+
+
+
+/*******************************************
+/* MEDIA QUERIES
+/*******************************************/
+@media only screen and (max-width: 550px) {
+     #logo {
+          display: none;
+     }
+
+     #logo-mobile {
+          display: block;
+          width: 80%;
+     }
+
+     header {
+          align-items: flex-start;
+          margin-top: 5em;
+     }
+}
+
+/* Tablet Styles */
+@media (min-width: 551px) and (max-width: 880px) {
+     #logo {
+          width: 80%;
+     }
+}
+
+/* Desktop Styles */
+@media (min-width: 881px) {
+     
+}
